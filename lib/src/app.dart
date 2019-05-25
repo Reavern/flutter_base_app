@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/screens_export.dart';
+import 'blocs/blocs_export.dart';
 
 import 'package:base_flutter_app/src/utils/bloc/main.dart';
 
@@ -9,7 +10,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProviderTree(
-      blocProviders: [],
+      blocProviders: [
+        BlocProvider<CounterBloc>(bloc: CounterBloc(),)
+      ],
       child: buildMainApp(),
     );
   }
