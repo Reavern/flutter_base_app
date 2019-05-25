@@ -1,1 +1,1 @@
-import 'bloc_provider_tree.dart';
+export 'bloc_provider_tree.dart';
