@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:base_flutter_app/src/screens/screens_export.dart';
+
 class RouteMap {
   final String route;
   final Map<String, dynamic> args;
@@ -9,7 +11,9 @@ class RouteMap {
   Widget getDestination() {
     switch (route) {
       case '/':
-        return Container();
+        return MenuScreen();
+      case '/counter':
+        return CounterScreen(title: "Counter",);
     }
   }
 }
