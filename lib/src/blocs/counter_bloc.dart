@@ -2,7 +2,7 @@
 import 'package:rxdart/rxdart.dart';
 
 // Bloc Interface
-import 'package:base_flutter_app/src/utils/bloc/bloc_interface.dart';
+import 'package:base_flutter_app/src/utils/bloc.dart';
 
 class CounterBloc extends BlocInterface {
 

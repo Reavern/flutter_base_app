@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/screens_export.dart';
 import 'blocs/blocs_export.dart';
 
-import 'package:base_flutter_app/src/utils/bloc/main.dart';
+import 'package:base_flutter_app/src/utils/bloc.dart';
 
 void main() => runApp(MainApp());
 
@@ -11,7 +11,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProviderTree(
       blocProviders: [
-        BlocProvider<CounterBloc>(bloc: CounterBloc(),)
+        BlocProvider<CounterBloc>(bloc: CounterBloc(),),
+        BlocProvider<ListItemBloc>(bloc: ListItemBloc(),)
       ],
       child: buildMainApp(),
     );

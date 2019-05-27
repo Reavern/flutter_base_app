@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:base_flutter_app/src/utils/navigators/main.dart';
+import 'package:base_flutter_app/src/utils/navigation.dart';
 
 class MenuScreen extends StatelessWidget {
   @override
@@ -22,6 +22,12 @@ class MenuScreen extends StatelessWidget {
               Navigate(context: context, route: '/counter').push()
             },
             text: "Counter",
+          ),
+          MenuButton(
+            onPressed: () => {
+              Navigate(context: context, route: '/list').push()
+            },
+            text: "List",
           )
         ],
       ),

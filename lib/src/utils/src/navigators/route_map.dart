@@ -14,6 +14,12 @@ class RouteMap {
         return MenuScreen();
       case '/counter':
         return CounterScreen(title: "Counter",);
+      case '/list':
+        return ListItemScreen(title: "List Items",);
+
+
+      default:
+        return NotFoundScreen(title: "Not Found",);
     }
   }
 }

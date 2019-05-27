@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // Import Blocs
-import 'package:base_flutter_app/src/utils/bloc/bloc_provider.dart';
+import 'package:base_flutter_app/src/utils/bloc.dart';
 import 'package:base_flutter_app/src/blocs/counter_bloc.dart';
 
 class CounterScreen extends StatelessWidget {
