@@ -15,7 +15,7 @@ class MenuScreen extends StatelessWidget {
       padding: EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           MenuButton(
             onPressed: () => {
