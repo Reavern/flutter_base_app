@@ -1,3 +1,3 @@
-export 'src/bloc/bloc_provider_tree.dart';
-export 'src/bloc/bloc_provider.dart';
-export 'src/bloc/bloc_interface.dart';
+export 'bloc/bloc_provider_tree.dart';
+export 'bloc/bloc_provider.dart';
+export 'bloc/bloc_interface.dart';

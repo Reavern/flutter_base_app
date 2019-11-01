@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:base_flutter_app/src/screens/screens_export.dart';
 
 class RouteMap {
@@ -16,7 +15,6 @@ class RouteMap {
         return CounterScreen(title: "Counter",);
       case '/list':
         return ListItemScreen(title: "List Items",);
-
 
       default:
         return NotFoundScreen(title: "Not Found",);

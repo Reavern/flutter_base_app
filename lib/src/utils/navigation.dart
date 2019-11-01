@@ -1,1 +1,1 @@
-export 'src/navigators/navigate.dart';
+export 'navigation/navigate.dart';

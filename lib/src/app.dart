@@ -4,15 +4,17 @@ import 'blocs/blocs_export.dart';
 
 import 'package:base_flutter_app/src/utils/bloc.dart';
 
-void main() => runApp(MainApp());
-
 class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProviderTree(
       blocProviders: [
-        BlocProvider<CounterBloc>(bloc: CounterBloc(),),
-        BlocProvider<ListItemBloc>(bloc: ListItemBloc(),)
+        BlocProvider<CounterBloc>(
+          bloc: CounterBloc(),
+        ),
+        BlocProvider<ListItemBloc>(
+          bloc: ListItemBloc(),
+        )
       ],
       child: buildMainApp(),
     );
@@ -20,14 +22,18 @@ class MainApp extends StatelessWidget {
 
   Widget buildMainApp() {
     return MaterialApp(
-      title: "Main App",
+      title: "Reavern",
       theme: ThemeData(
-          primaryColor: Colors.white,
-          accentColor: Color.fromRGBO(69, 79, 88, 1),
-          buttonColor: Color.fromRGBO(57, 214, 143, 1),
-          hintColor: Colors.grey,
-          backgroundColor: Colors.white,
-          disabledColor: Colors.grey),
+        primaryColor: Color(0xFF3F79C4), // 3f79c4 biru
+        accentColor: Color(0xFFFFB300), // ffb300 kuning
+        buttonColor: Color(0xFF3F79C4),
+        disabledColor: Color(0xFFF2F2F2),
+        hintColor: Color(0xFFBBBBBB),
+        cursorColor: Color(0xFF0D0D0D),
+        errorColor: Color(0xFFFB0000),
+        backgroundColor: Colors.white,
+        fontFamily: 'OpenSans',
+      ),
       home: MenuScreen(),
     );
   }

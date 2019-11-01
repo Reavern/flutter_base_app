@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'route_map.dart';
+import 'package:base_flutter_app/src/routes.dart';
 
 class Navigate {
   final String route;
