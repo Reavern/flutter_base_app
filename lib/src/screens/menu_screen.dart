@@ -93,7 +93,6 @@ class MenuScreen extends StatelessWidget {
               ),
               Checkbox(
                 value: true,
-                
                 activeColor: Theme.of(context).buttonColor,
                 onChanged: (_) {},
               ),
